@@ -1,0 +1,336 @@
+﻿<Esotericas><List>
+
+	<Esoterica Name="SoulColor_QiCaiXinFa1">
+		<DisplayName>Three-color Heart Method</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>Introduction to the colorful glory valley。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Increase stats by 0.5 points 
+Enhance potential by 1 
+Increases Qi Recovery Speed ​​
+significant increases max Qi 
+Learn the secret: 
+Bai Ling Sword[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_QiCaiXinFa1</Modifier>
+		<Fabaos>
+			<li>MiBaoFormula_BaiLingZhanXianSword</li>
+		</Fabaos>
+	</Esoterica>
+	
+		<Esoterica Name="SoulColor_QiCaiXinFa2">
+		<DisplayName>Colorful Heart</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>Colorful Liuli Valley's Advanced Mind。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Increase attribute 1 point 
+Enhance potential by 2 
+Increases Qi Recovery Speed ​​
+significant increases max Qi 
+Learn the secret treasure: 
+Shen Nong Ding[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_QiCaiXinFa2</Modifier>
+		<Fabaos>
+			<li>MiBaoFormula_ShenNongDing</li>
+		</Fabaos>
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_QiCaiXinFa3">
+		<DisplayName>Colorful Heart</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>Colorful Liuli Valley handed down top mentality。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Increase attributes by 1.5 points 
+Enhance potential by 3 
+Increases Qi Recovery Speed ​​
+significant increases max Qi 
+Learn the secret: 
+Five Poison Sword[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_QiCaiXinFa3</Modifier>
+		<Fabaos>
+			<li>MiBaoFormula_WuDuZhuXianSword</li>
+		</Fabaos>
+	</Esoterica>
+
+	<Esoterica Name="SoulColor_QiCaiMiXinZou1">
+		<DisplayName>Sleepy curse</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>Use your mind to perplex your mind to reduce your deeds。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Lowers Attainment by 15[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_QiCaiMiXinZou1</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_QiCaiMiXinZou2">
+		<DisplayName>Centrifugal spell</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>Use your mind to doubt your own mind to lower your path。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Lowers Attainment by 35[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_QiCaiMiXinZou2</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_QiCaiMiXinZou3">
+		<DisplayName>Obsession</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>Use your mind to deceive yourself to lower your path。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Lowers Attainment by 50[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_QiCaiMiXinZou3</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="SoulColor_XinYanZhou">
+		<DisplayName>Heart Eye Curse</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>Introduction to the colorful glazed valley spell can open your eyes</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>. 
+[size=10][color=#D06508]Increase the speed of Qi recovery 
+Significantly increases max Qi [/color][/size]</EffectDesc>
+		<Modifier>SoulColor_XinYanZhou</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="SoulColor_YangShengFa">
+		<DisplayName>Regeneration</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>The colorful glazed valley inherits the technique of keeping in good health and absorbs the air of heaven and earth to replenish itself.</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Mu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Increase lifespan 
+Improve the speed of cultivation 
+Improve the efficiency of drinking gas 
+Increase the speed of Qi recovery[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_YangShengFa</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="SoulColor_QiCaiLiuGuangZhen">
+		<DisplayName>Colorful Stream Array</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>Colorful glazed valley protection valley formation。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Learn Array: Colorful Stream Array[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_YangShengFa</Modifier>
+		<ZhenNodes>
+			<li>SoulColor_QiCaiLiuGuangZhen</li>
+			<li>SoulColor_LiuGuang_1</li>
+			<li>SoulColor_LiuGuang_2</li>
+			<li>SoulColor_LiuGuang_3</li>
+			<li>SoulColor_LiuGuang_4</li>
+		</ZhenNodes>
+		<ZhenShapes>
+			<li Name="Colorful streamer array"> 
+				<ShapeInfo>10|9|0|SoulColor_QiCaiLiuGuangZhen|11|10|2|SoulColor_LiuGuang_3|11|9|0|SoulColor_LiuGuang_4|9|9|5|SoulColor_LiuGuang_1|9|8|0|SoulColor_LiuGuang_2</ShapeInfo>
+				<Descript>Inheritance of colorful glazed valleys, colorful circles around the world。</Descript>
+			</li>
+		</ZhenShapes>
+	</Esoterica>
+
+	<Esoterica Name="SoulColor_LingRockMake">
+		<DisplayName>Qi Refining</DisplayName>
+		<Icon>res/Sprs/ui/icon_lingjshi01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<!--<Desc>将灵气凝结为灵石或灵晶。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]Acquired Magical Powers: Refining Spirit Stones\nAcquired Magical Powers: Refined Spirit Crystals[/color][/size]</EffectDesc>
+		<Magics>
+			<li>LingStoneMake</li>
+			<li>LingCrystalMake</li>
+		</Magics>
+	</Esoterica>
+
+	<Esoterica Name="SoulColor_LingLongFenXinShu1">
+		<DisplayName>Spirit Heart</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>Delicate Distraction-Spirit Heart</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Increase the number of Artifacts by 1 
+Decrease Attainment by 30[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_LingLongFenXinShu1</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_LingLongFenXinShu2">
+		<DisplayName>Long Heart</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>Delicate Distraction-Long Heart</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Increase the number of Artifacts by 1 
+Decrease Attainment by 40[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_LingLongFenXinShu2</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_LingLongFenXinShu3">
+		<DisplayName>Exquisite Heart</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>Delicate Distraction-Delicate Heart</Desc>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Increase the number of Artifacts by 2 
+Decrease Attainment by 50[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_LingLongFenXinShu3</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_ShengSiLu">
+		<DisplayName>Life and Death</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>A secret book that records the principles of lifespan and death transformation. Studying this volume can increase lifespanspan and speed up Qi recover。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Increase lifespan 
+Increase Qi Recovery Speed[/color][/size][/color][/size]</EffectDesc>
+		<Modifier>SoulColor_ShengSiLu</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_LunHuiJing">
+		<DisplayName>Samsara Sutra</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>The secret law transmitted from the land government is the core foundation of the longevity cycle. Practicing this method can fundamentally increase the maximum value of Qi.</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Raise Max Qi Radically[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_GuLingLengHuo">
+		<DisplayName>Bone Spirit Cold Fire</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>The colorful glazed valley inherits the flames, and the strange flames that combine extreme cold and extreme heat can only be encountered in extreme cold and overcast places when the sun and the moon alternate every hundred years.</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Increase shield strength 
+Substantially increase rejuvenation speed 
+Substantially increase alchemy speed 
+Substantially increase alchemy success rate 
+Substantially increase alchemy output 
+Substantially increase temperature adaptability[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_GuLingLengHuo</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="SoulColor_KongShuiShu">
+		<DisplayName>Water control</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>The colorful glazed glass was decided by the water control law, and its affinity to the water system has been increased to achieve the effect of offense and defense.</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]Significantly increased shield strength 
+Significantly increases Qi recovery speed 
+Significantly increased magic power 
+Significantly increased Artifact Qi recovery speed[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_KongShuiShu</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="SoulColor_LunHuiLianQiShu">
+		<DisplayName>Reincarnation</DisplayName>
+		<Icon>res/Sprs/ui/icon_shentong</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>The method of reincarnation in the record of lifespan and death。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<Type>Refining</Type>
+		<EffectDesc>[size=10][color=#D06508]Significantly increase refining speed 
+Significantly improve refining success rate 
+Significantly improve refining grade 
+Significantly improve refining quality 
+Significantly increase the chance of refining artifacts[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_LunHuiLianQiShu</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_ShuiYuanShen">
+		<DisplayName>Water god</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>7</Difficulty>
+		<Desc>Condensate the water god, increase the charm, increase the speed of Qi, and use the water way as a guide to differentiate a spirit god distraction。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]Increase Charisma by 2 points 
+Increases Qi Recovery Speed ​​
+Add a Primal Avatar[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_ShuiYuanShen</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="SoulColor_ShengMingYuanShen">
+		<DisplayName>Primordial lifespan</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>10</Difficulty>
+		<Desc>Condensing the Primordial Spirit of Life increasing ones roots and bones.Greatly increasing ones Lifespan and can be guided by the way of Life to condense a Primal spirit。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]Increase root bones by 2 points 
+Significantly increase lifespanspan 
+Improve the quality of refining tools 
+Significantly increase the chance of artifact training 
+Improve the yield of alchemy 
+Add a Primordial clone 
+Learn magic: Call of LIfe\n[/color][/size]</EffectDesc>
+		<Modifier>SoulColor_ShengMingYuanShen</Modifier>
+		<Magics>
+			<li>SoulColor_Magic_3</li>
+		</Magics>
+	</Esoterica>
+	
+</List></Esotericas>

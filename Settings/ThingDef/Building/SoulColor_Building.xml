@@ -1,0 +1,399 @@
+<ThingDefs><List>
+
+<ThingDef Type="Building" Name="SoulColor_MoFaZhen" Parent="ProductionBase">
+<ThingName>Magic Array</ThingName>
+<Desc>A magic circle built according to certain rules. Can produce items, store Qi and use specific magic. </Desc>
+<TexPath>Spr/Object/wuquan01.png</TexPath>
+<TexScale>0.4</TexScale>
+<SelectAble>1</SelectAble>
+<ClassName>MoFaZhen_Building</ClassName>
+<CastShadow>0</CastShadow>
+<BlockMissile>1</BlockMissile>
+<Beauty>100</Beauty>
+<BlockLight>0</BlockLight>
+<MaxHitPoints>100</MaxHitPoints>
+<ColliderKind>None</ColliderKind>
+<VisionRadius>0</VisionRadius>
+
+<Flammability>
+<Flammability>-1</Flammability>
+</Flammability>
+
+<Collider>
+<Data>
+[6],
+</Data>
+<WorkOffset>
+<li Index="0" X="0" Y="0" Ang="1"/>
+</WorkOffset>
+</Collider>
+
+<Light>
+<Value>40</Value>
+<Failing>0.6</Failing>
+<FailRadius>5</FailRadius>
+<Radius>10</Radius>
+<Color>FFDEBCFF</Color>
+</Light>
+
+<Building>
+<RoomKind>None</RoomKind>
+<ShowFree>0</ShowFree>
+<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+<CanMakeRoom>0</CanMakeRoom>
+<WorkAnimation>produce</WorkAnimation>
+<BePackage>1</BePackage>
+<NoFengshui>1</NoFengshui>
+<NoFight>1</NoFight>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+<Quality>0</Quality>
+<StuffCategories>
+<Stuff name = "MetalBlock"/>
+<Stuff name = "WoodBlock"/>
+<Stuff name = "RockBlock"/>
+</StuffCategories>
+<CostStuffCount>1</CostStuffCount>
+</BeMade>
+<SnowRenderData>
+<x>3.3</x>
+<y>4</y>
+<z>1</z>
+</SnowRenderData>
+<ProducePriority>1</ProducePriority>
+<ProduceKind>Handwork</ProduceKind>
+<Produces>
+<!--<Produce>
+<ThingDef>SoulColor_001</ThingDef>
+<Display>Illusion Cloth</Display>
+<Count>1</Count>
+</Produce>
+<Produce>
+<ThingDef>SoulColor_002</ThingDef>
+<Display>Illusion Cloth</Display>
+<Count>1</Count>
+</Produce> -->
+<Produce>
+<ThingDef>SoulColor_Sword_GuiRen</ThingDef>
+<Display>Gathering Spirit Sword</Display>
+<Count>1</Count>
+</Produce>
+<Produce>
+<ThingDef>SoulColor_Dan_TXD</ThingDef>
+<Display>Tianxin Dan</Display>
+<Count>1</Count>
+</Produce>
+<Produce>
+<ThingDef>Item_LingCloth</ThingDef>
+<Display>Spirit Cloth</Display>
+<Count>5</Count>
+</Produce>
+<Produce>
+<ThingDef>Item_JinLingStoneBlock</ThingDef>
+<Display>Golden Lingshi Brick</Display>
+<Count>5</Count>
+</Produce>
+<Produce>
+<ThingDef>Item_MuLingStoneBlock</ThingDef>
+<Display>Wooden Lingshi Brick</Display>
+<Count>5</Count>
+</Produce>
+<Produce>
+<ThingDef>Item_ShuiLingStoneBlock</ThingDef>
+<Display>Water Spirit Stone Brick</Display>
+<Count>5</Count>
+</Produce>
+<Produce>
+<ThingDef>Item_HuoLingStoneBlock</ThingDef>
+<Display>Fire Spirit Stone Brick</Display>
+<Count>5</Count>
+</Produce>
+<Produce>
+<ThingDef>Item_TuLingStoneBlock</ThingDef>
+<Display>Earth Bricks</Display>
+<Count>5</Count>
+</Produce>
+<Produce>
+<ThingDef>SoulColor_Item_IronRockLeftover</ThingDef>
+<Display>Golden spirit stone corner material</Display>
+<Count>100</Count>
+</Produce>
+<Produce>
+<ThingDef>SoulColor_Item_WoodRockLeftover</ThingDef>
+<Display>Wood spirit stone corner material</Display>
+<Count>100</Count>
+</Produce>
+<Produce>
+<ThingDef>SoulColor_Item_SilverRockLeftover</ThingDef>
+<Display>Water spirit stone corner material</Display>
+<Count>100</Count>
+</Produce>
+<Produce>
+<ThingDef>SoulColor_Item_CopperRockLeftover</ThingDef>
+<Display>Fire Spirit Stone Corner Material</Display>
+<Count>100</Count>
+</Produce>
+<Produce>
+<ThingDef>SoulColor_Item_BrownRockLeftover</ThingDef>
+<Display>Earthstone corner material</Display>
+<Count>100</Count>
+</Produce>
+</Produces>
+</Building>
+<StoryBnts>
+<li Name="Activate" Desc="Activate Magic Array" Appoint="3" Story="SoulColor_MoFaZhen" Cost="5"/>
+</StoryBnts>
+
+<Ling>
+<Attenuation>0.2</Attenuation>
+<Absorption>1</Absorption>
+<Accommodate>100</Accommodate>
+</Ling>
+
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_KongTiao" Parent="OrnamentBase">
+<TexPath>res\Sprs\buildingnew\building_smallxianglu02</TexPath>
+<TexScale>0.8</TexScale>
+<ThingName>Regulating incense burner</ThingName>
+<Desc>The incense burner made of special materials can achieve the magical effect of controlling the temperature of the room. </Desc>
+<ClassName>KongTiao_Building</ClassName>
+<Tags>
+<Tag Name="XiangLu_FSZW" Level="1"/>
+</Tags>
+<ColliderKind>ThrowOver</ColliderKind>
+<ShadowSize>
+<x>0.7</x>
+<y>0.7</y>
+</ShadowSize>
+<Collider>
+<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+<Data>
+[3],
+</Data>
+<OffsetGroup>
+<li><x>0</x><y>0.3</y></li>
+<li><x>0</x><y>0.3</y></li>
+<li><x>0</x><y>0.3</y></li>
+<li><x>0</x><y>0.3</y></li>
+</OffsetGroup>
+</Collider>
+<Flammability>
+<Flammability>0</Flammability>
+</Flammability>
+<Building>
+<Orientation>F,R</Orientation>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+<Quality>0</Quality>
+<StuffCategories>
+<Stuff name = "MetalBlock"/>
+<Stuff name = "WoodBlock"/>
+<Stuff name = "RockBlock"/>
+</StuffCategories>
+<CostStuffCount>6</CostStuffCount>
+</BeMade>
+<SnowRenderData>
+<x>2.3</x>
+<y>3.5</y>
+<z>1</z>
+</SnowRenderData>
+</Building>
+<Heat>
+<Value>0</Value>
+<Radius>5</Radius>
+<RoomValue>0</RoomValue>
+<Failing>1</Failing>
+<FailRadius>1</FailRadius>
+</Heat>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_MagicCushion" Parent="FurnitureBase">
+<ThingName>Cultivation Seat</ThingName>
+<Desc> A place dedicated for Cultivation.</Desc>
+<Tags>
+<Tag Name="Sitable" Level="1"/>
+<Tag Name="Practice" Level="15"/>
+</Tags>
+<TexScale>0.9</TexScale>
+<TexPath>res/Sprs/buildingnew/building_fazuo01</TexPath>
+<SelectAble>1</SelectAble>
+<CastShadow>0</CastShadow>
+<BlockLight>0</BlockLight>
+<Collider>
+<Data>
+[6],
+</Data>
+<WorkOffset>
+<li Index="0" X="0" Y="0" Ang="181"/>
+</WorkOffset>
+</Collider>
+
+<Building>
+<OwnerCount>1</OwnerCount>
+<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+<BePackage>1</BePackage>
+<WorkTexPath>res/Sprs/buildingnew/building_fazuo01</WorkTexPath>
+<Perfab>Building/Prefabs/RefiningCushion</Perfab><!--Use special effects-->
+<PracticeEffectiveness>1</PracticeEffectiveness>
+<BeMade>
+<WorkToMake>50</WorkToMake>
+<Quality>0</Quality>
+<StuffCategories>
+<Stuff name = "MetalBlock"/>
+<Stuff name = "WoodBlock"/>
+<Stuff name = "RockBlock"/>
+</StuffCategories>
+<CostStuffCount>20</CostStuffCount>
+<CostItems>
+</CostItems>
+</BeMade>
+<SnowRenderData>
+<x>2.4</x>
+<y>3.55</y>
+<z>1</z>
+</SnowRenderData>
+</Building>
+<Ling>
+<AddionLing>240</AddionLing>
+<AddionRadius>1</AddionRadius>
+<AddionFailing>0</AddionFailing>
+<AddionFailRadius>0</AddionFailRadius>
+
+<Attenuation>0</Attenuation>
+<Absorption>0</Absorption>
+<Accommodate>0</Accommodate>
+</Ling>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_TuDi" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Terraform</ThingName>
+<Desc> transform an area into land. </Desc>
+<Building>
+<FillTarrain>Soil</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_NiDi" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Mud Terraform</ThingName>
+<Desc> Transform an area into mud. </Desc>
+<Building>
+<FillTarrain>Mud</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_ShiDi" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Wetland</ThingName>
+<Desc>Transform an area into a Wetland. </Desc>
+<Building>
+<FillTarrain>WetLand</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_WoTu" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Fertile Soil</ThingName>
+<Desc>Transform an area into Fertile Soil. </Desc>
+<Building>
+<FillTarrain>FertileSoil</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_YanShiDiBiao" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Rocky Surface</ThingName>
+<Desc>Transform an area into Rocky Surface. </Desc>
+<Building>
+<FillTarrain>StoneLand</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_ShaDi" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Sand</ThingName>
+<Desc>Transform an area into Sand. </Desc>
+<Building>
+<FillTarrain>SandLand</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_LingTu" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Spirit Soil</ThingName>
+<Desc>Transform an area into spirit Soil. </Desc>
+<Building>
+<FillTarrain>LingSoil</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_QianShui" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Shallow Water</ThingName>
+<Desc>Transform an area into Shallow Water. </Desc>
+<Building>
+<FillTarrain>ShallowWater</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_XueShui" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Blood Water</ThingName>
+<Desc>Transform an area into Blood Water. </Desc>
+<Building>
+<FillTarrain>BloodWater</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+<ThingDef Type="Building" Name="SoulColor_LingShui" Parent="FillBase">
+<Color>FFFFFFFF</Color>
+<ThingName>Spirit Water</ThingName>
+<Desc>Transform an area into Spirit Water. </Desc>
+<Building>
+<FillTarrain>LingWater</FillTarrain>
+<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+<BeMade>
+<WorkToMake>100</WorkToMake>
+</BeMade>
+</Building>
+</ThingDef>
+
+</List></ThingDefs>

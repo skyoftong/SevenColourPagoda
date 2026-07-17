@@ -1,0 +1,45 @@
+<Places><List>	
+	<Place Name="SoulColor_qcs" Parent="Place_Level2Base">
+		<Scale>0.5</Scale>
+		<UnLocked>1</UnLocked>
+		<Location X="1200" Y="850"/>
+		<DisplayName>Colorful Mountain</DisplayName>
+		<Desc>The colorful reflection of the lake in the setting sun is like a fairyland, full of Qi and rich products, it is a paradise。</Desc>
+		<Icon>res/Sprs/map/map_shan02</Icon>
+		<Events>
+			<li Name="Find" Rate="10"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_MagicHerb</ThingDef>
+				<Count>20</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Mint</ThingDef>
+				<Count>20</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_ChickenMeat</ThingDef>
+				<Count>20</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_FishMeat</ThingDef>
+				<Count>20</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_RabbitMeat</ThingDef>
+				<Count>20</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_LingStone</ThingDef>
+				<Count>40</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</Produce>
+	</Place>
+</List></Places>

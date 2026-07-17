@@ -1,0 +1,71 @@
+<Defs><List>
+
+	<Def Name="SoulColor_QiCaiLiuGuan" DisplayName="Colorful stream array" Base="0">
+		<HideInUi>1</HideInUi>
+		<SuitEffect>
+			<li>
+				<DisplayName></DisplayName>
+				<Description>Increased array size</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>NpcNodeCountNumPowerupAddp</TypeExtra>
+				<fParam1>-1</fParam1>
+			</li>
+			<li>
+				<DisplayName></DisplayName>
+				<Description>Increased array load</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>NpcZhenPressurePowerupAddp</TypeExtra>
+				<fParam1>-1</fParam1>
+			</li>
+			<li>
+				<DisplayName></DisplayName>
+				<Description>Additional weapon power</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>FabaoAtkPowerAddv</TypeExtra>
+				<fParam1>64</fParam1>
+			</li>
+			<li>
+				<DisplayName></DisplayName>
+				<Description>Additional increase in spell ability</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>MagicPowerAddv</TypeExtra>
+				<fParam1>121</fParam1>
+			</li>
+			<li>
+				<DisplayName></DisplayName>
+				<Description>Increased protection ability</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>SheildAddv</TypeExtra>
+				<fParam1>121</fParam1>
+			</li>
+			<li>
+				<DisplayName></DisplayName>
+				<Description>Additional stability</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>StabilityAddv</TypeExtra>
+				<fParam1>64</fParam1>
+			</li>
+			<li>
+				<DisplayName></DisplayName>
+				<Description>Array efficiency increased</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>ReduceCostAddv</TypeExtra>
+				<fParam1>64</fParam1>
+			</li>
+			<li>
+				<DisplayName></DisplayName>
+				<Description>Additional increase in operating capacity</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>SkillCooldownAddv</TypeExtra>
+				<fParam1>64</fParam1>
+			</li>
+			<li>
+				<DisplayName></DisplayName>
+				<Description>Increased the upper limit of the magic array</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>NpcZhenPointAddv</TypeExtra>
+				<fParam1>3</fParam1>
+			</li>
+		</SuitEffect>
+	</Def>
+</List></Defs>

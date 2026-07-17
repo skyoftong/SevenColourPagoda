@@ -1,0 +1,46 @@
+﻿<Esotericas><List>
+
+<Esoterica Name="Magic_LingStoneMake_1">
+<DisplayName>The Art of Refining Spirit Stones</DisplayName>
+<Icon>res/Sprs/ui/icon_lingjshi01</Icon>
+<StarLevel>0</StarLevel>
+<Difficulty>2</Difficulty>
+<!--<Desc>Condenses the spiritual energy into spiritual stones. </Desc>-->
+<GLevel>Qi</GLevel>
+<Element>None</Element>
+
+<EffectDesc>[size=10][color=#D06508] Acquired supernatural powers: refining spiritual stones\ncondenses the spiritual energy into spiritual stones. [/color][/size]</EffectDesc>
+<Magics>
+<li>SoulColor_Magic_1</li>
+</Magics>
+</Esoterica>
+<Esoterica Name="Magic_LingCrystalMake_1">
+<DisplayName>The Art of Refining Spirit Crystals</DisplayName>
+<Icon>res/Sprs/ui/icon_lingjing01</Icon>
+<StarLevel>1</StarLevel>
+<Difficulty>5</Difficulty>
+<!--<Desc> Condenses the spirit energy into spirit crystals. </Desc>-->
+<GLevel>Qi</GLevel>
+<Element>None</Element>
+
+<EffectDesc>[size=10][color=#D06508] Acquired supernatural powers: refining spiritual crystals\ncondenses Qu into spiritual crystals. [/color][/size]</EffectDesc>
+<Magics>
+<li>SoulColor_Magic_2</li>
+</Magics>
+</Esoterica>
+
+<Esoterica Name="Magic_MakePuppet">
+<DisplayName>Soul Mastery</DisplayName>
+<Icon>res/Sprs/ui/icon_souhun01</Icon>
+<StarLevel>1</StarLevel>
+<Difficulty>3</Difficulty>
+<!--<Desc> Release the body and wake it up. The awakened body can undertake some simple hard labor, and its quality is related to the realm of the body before death. </Desc>-->
+<GLevel>Qi</GLevel>
+<Element>None</Element>
+<EffectDesc>[size=10][color=#D06508]Learn Miracle: Soul Mastery\nUse on a dead body to awaken it. The awakened body can undertake simple physical labor, with quality related to its cultivational state while it was alive.[/color][/size]</EffectDesc>
+<Magics>
+<li>MakePuppet</li>
+</Magics>
+</Esoterica>
+
+</List></Esotericas>
