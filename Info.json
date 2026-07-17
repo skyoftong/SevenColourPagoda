@@ -1,0 +1,8 @@
+﻿{
+  "Name": "Example",
+  "DisplayName": "演示模组(Example Mod)",
+  "Desc": "This is an official demo of the mod, showcasing some of the features that mods can offer. Visit https://github.com/GSQStudio/acs1_example_mod for details. You can also submit new mods at https://github.com/GSQStudio/acs1_mods",
+  "Author": "GSQ",
+  "UIPackage": "UI/Sample",
+  "Dependencies": null
+}
