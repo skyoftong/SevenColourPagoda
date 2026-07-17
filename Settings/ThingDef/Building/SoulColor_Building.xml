@@ -255,8 +255,8 @@
 </SnowRenderData>
 </Building>
 <Ling>
-<AddionLing>240000</AddionLing>
-<AddionRadius>1</AddionRadius>
+<AddionLing>2400000</AddionLing>
+<AddionRadius>2</AddionRadius>
 <AddionFailing>0</AddionFailing>
 <AddionFailRadius>0</AddionFailRadius>
 
