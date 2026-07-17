@@ -32,7 +32,7 @@
       <WorkTexPath>Spr/Object/Buildings/GatheringMeditationCushion.png</WorkTexPath>
       <PracticeEffectiveness>1.2</PracticeEffectiveness>
       <BeMade>
-        <WorkToMake>80</WorkToMake>
+        <WorkToMake>1</WorkToMake>
         <Quality>0</Quality>
         <StuffCategories>
           <Stuff name="WoodBlock"/>
