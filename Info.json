@@ -1,10 +1,10 @@
 ﻿{
-	"Name":"jvlingshijvan",		
-	"DisplayName":"聚灵石卷", 
-	"Desc":"提供3种聚灵石，每种5个",
+	"Name":"整合多功能Mods",		
+	"DisplayName":"整合多功能Mods", 
+	"Desc":"整合多功能Mods",
 	"Enable":true,			
 	"GameVersion":0.9485,		
-	"Version":1.0,			
-	"Author":"血夜漫游",			
+	"Version":1.00,			
+	"Author":"执念莫相颜",			
 	"Sort":"1",				
 }
