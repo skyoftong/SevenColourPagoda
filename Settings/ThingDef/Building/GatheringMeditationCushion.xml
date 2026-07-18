@@ -1,5 +1,5 @@
 <ThingDefs><List>
-	<ThingDef Type="Building" Name="Building_MagicCushion_super" Parent="FurnitureBase">
+	<ThingDef Type="Building" Name="Building_MagicCushion" Parent="FurnitureBase">
 	<ThingName>法座plus</ThingName>
 	<Desc>修炼专用的法座，能聚集灵气。</Desc>
 	<Tags>
