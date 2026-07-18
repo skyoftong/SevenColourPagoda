@@ -1,7 +1,7 @@
 {
   "Name": "GatheringMeditationCushion",
-  "DisplayName": "聚灵蒲团",
-  "Desc": "新增一座可供修士打坐修行、并能汇聚周围灵气的蒲团。",
+  "DisplayName": "法座plus",
+  "Desc": "加强了法座的聚灵能力, 10000000。",
   "GameVersion": 1.0,
   "Version": 1.0,
   "Author": "小z"
