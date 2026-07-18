@@ -55,7 +55,7 @@
 		<Duration>600</Duration>
 		<Display>1</Display>
 		<Properties>
-			<li Name="LingAbsorbSpeed" AddP="5000"/>
+			<li Name="LingAbsorbSpeed" AddP="50000000"/>
 		</Properties>
 	</Modifier>
 	<!--灵力丹-->
@@ -66,7 +66,7 @@
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Properties>
-			<li Name="NpcLingMaxValue" AddV="100000"/>
+			<li Name="NpcLingMaxValue" AddV="100000000"/>
 		</Properties>
 	</Modifier>
 	<!--技能丹-->
@@ -80,21 +80,21 @@
 			<li Name="MaxAge" AddV="1000"/>
 		</Properties>
 		<Skills>
-                <li Name="Manual" Level="50"/>
-                <li Name="DanQi" Level="50"/>
-                <li Name="Medicine" Level="50"/>
-                <li Name="Barrier" Level="50"/>
-                <li Name="FightSkill" Level="50"/>
-                <li Name="Fabao" Level="50"/>
-                <li Name="SocialContact" Level="50"/>
-                <li Name="Qi" Level="50"/>
-                <li Name="Art" Level="50"/>
-                <li Name="Cooking" Level="50"/>
-                <li Name="Building" Level="50"/>
-                <li Name="Farming" Level="50"/> 
-                <li Name="Mining" Level="50"/>
-                <li Name="DouFa" Level="50"/>
-                <li Name="Manual" Level="50"/> 
+                <li Name="Manual" Level="250"/>
+                <li Name="DanQi" Level="250"/>
+                <li Name="Medicine" Level="250"/>
+                <li Name="Barrier" Level="250"/>
+                <li Name="FightSkill" Level="250"/>
+                <li Name="Fabao" Level="250"/>
+                <li Name="SocialContact" Level="250"/>
+                <li Name="Qi" Level="250"/>
+                <li Name="Art" Level="250"/>
+                <li Name="Cooking" Level="250"/>
+                <li Name="Building" Level="250"/>
+                <li Name="Farming" Level="250"/> 
+                <li Name="Mining" Level="250"/>
+                <li Name="DouFa" Level="250"/>
+                <li Name="Manual" Level="250"/> 
         </Skills>
 	</Modifier>
 </List></ModifierDefs>

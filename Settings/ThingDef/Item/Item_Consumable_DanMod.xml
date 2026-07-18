@@ -24,7 +24,7 @@
 			<BeMade>
 				<WorkToMake>400</WorkToMake>
 				<CostItems>
-					<Item name = "Item_LingStone" count = "10"/>
+					<Item name = "Item_LingStone" count = "1"/>
 				</CostItems>
 			</BeMade> 
 		</Item>
@@ -56,7 +56,7 @@
 			<BeMade>
 				<WorkToMake>400</WorkToMake>
 				<CostItems>
-					<Item name = "Item_LingStone" count = "10"/>
+					<Item name = "Item_LingStone" count = "1"/>
 				</CostItems>
 			</BeMade> 
 		</Item>
@@ -88,7 +88,7 @@
 			<BeMade>
 				<WorkToMake>400</WorkToMake>
 				<CostItems>
-					<Item name = "Item_LingStone" count = "100"/>
+					<Item name = "Item_LingStone" count = "10"/>
 				</CostItems>
 			</BeMade> 
 		</Item>
@@ -120,7 +120,7 @@
 			<BeMade>
 				<WorkToMake>400</WorkToMake>
 				<CostItems>
-					<Item name = "Item_LingStone" count = "1000"/>
+					<Item name = "Item_LingStone" count = "100"/>
 				</CostItems>
 			</BeMade> 
 		</Item>
@@ -152,7 +152,7 @@
 			<BeMade>
 				<WorkToMake>400</WorkToMake>
 				<CostItems>
-					<Item name = "Item_LingStone" count = "100"/>
+					<Item name = "Item_LingStone" count = "1"/>
 				</CostItems>
 			</BeMade> 
 		</Item>
@@ -184,7 +184,7 @@
 			<BeMade>
 				<WorkToMake>400</WorkToMake>
 				<CostItems>
-					<Item name = "Item_LingStone" count = "100"/>
+					<Item name = "Item_LingStone" count = "1"/>
 				</CostItems>
 			</BeMade> 
 		</Item>
@@ -216,7 +216,7 @@
 			<BeMade>
 				<WorkToMake>400</WorkToMake>
 				<CostItems>
-					<Item name = "Item_LingStone" count = "1000"/>
+					<Item name = "Item_LingStone" count = "1"/>
 				</CostItems>
 			</BeMade> 
 		</Item>
