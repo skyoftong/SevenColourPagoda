@@ -1,10 +1,10 @@
-﻿<!--物品定义:名称，图片，说明，等级、美观，消耗物品，-->
+<!--物品定义:名称，图片，说明，等级、美观，消耗物品，-->
 <ThingDefs><List>
 	<!--精元丹-回满-->
 	<ThingDef Type="Item" Name="Item_Dan_JingYuan99" Parent="DanBase">
 		<ThingName>精元丹-回满</ThingName>
 		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
-		<Desc>回满精元。</Desc>	
+		<Desc>服下后立即补满精元。将其置于地面，可释放100000000点聚灵之力，汇聚周围灵气。</Desc>	
 		<Rate>9</Rate>
 		<Beauty>16</Beauty>
 		<ElementKind>None</ElementKind>
@@ -32,6 +32,16 @@
 			<Kind>None</Kind>
 			<Value>3</Value>   
 		</Element>
+		<Ling>
+			<AddionLing>100000000</AddionLing>
+			<AddionRadius>5</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	
 	</ThingDef>
 	<!--精元丹-无限-->
 	<ThingDef Type="Item" Name="Item_Dan_JingYuan98" Parent="DanBase">

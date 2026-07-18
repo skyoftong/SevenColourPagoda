@@ -77,7 +77,7 @@
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Properties>
-			<li Name="MaxAge" AddV="1000"/>
+			<li Name="MaxAge" AddV="1000000000"/>
 		</Properties>
 		<Skills>
                 <li Name="Manual" Level="250"/>
