@@ -1,8 +1,8 @@
 {
   "Name": "GatheringMeditationCushion",
   "DisplayName": "法座plus",
-  "Desc": "加强了法座的聚灵能力, 10000000。",
+  "Desc": "加强了法座的聚灵能力为10000000。地图去迷雾。土地浅水沃土改造无需材料, 降低所需时间。行商五天来一次。小乾坤界增强。增加弟子数量",
   "GameVersion": 1.0,
-  "Version": 1.0,
+  "Version": 1.01,
   "Author": "小z"
 }
