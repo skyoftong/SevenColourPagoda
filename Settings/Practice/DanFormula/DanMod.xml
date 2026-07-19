@@ -1,0 +1,94 @@
+﻿<!--丹炉丹方：需求等级、成功率、产量数量-->
+<DanFormulas><List>
+	<!--超人丹-->
+	<Dan Name="Dan_ChaoRen1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen1</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--剑仙丹-->
+	<Dan Name="Dan_ChaoRen2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen2</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>	
+	<!--劫灭丹-->
+	<Dan Name="Dan_ChaoRen3">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen3</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>	
+	<!--天道丹-->
+	<Dan Name="Dan_ChaoRen4">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen4</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>	
+	<!--功德丹-->
+	<Dan Name="Dan_ChaoRen5">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen5</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>	
+	<!--体修丹-->
+	<Dan Name="Dan_ChaoRen6">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen6</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--金灵丹-->
+	<Dan Name="Dan_ChaoRen7">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen7</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--木灵丹-->
+	<Dan Name="Dan_ChaoRen8">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen8</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--水灵丹-->
+	<Dan Name="Dan_ChaoRen9">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen9</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--火灵丹-->
+	<Dan Name="Dan_ChaoRen10">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen10</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--土灵丹-->
+	<Dan Name="Dan_ChaoRen11">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ChaoRen11</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+
+
+
+</List></DanFormulas>
