@@ -1,16 +1,5 @@
 ﻿<!--模板生成器，定义效果-->
 <ModifierDefs><List>
-	<!--精元丹-回满-->
-	<Modifier Name="Dan_JingYuan99" Type="Normal">
-		<DisplayName>精元丹-回满</DisplayName>
-		<Desc>精元丹-回满。</Desc>
-		<MaxStack>0</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Properties>
-			<li Name="MaxAge" AddV="1"/>
-		</Properties>
-	</Modifier>
 	<!--超人丹-->
 	<Modifier Name="Dan_ChaoRen1" Type="Normal">
 		<DisplayName>超人丹</DisplayName>
