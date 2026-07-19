@@ -1,8 +1,41 @@
 ﻿<!--物品定义:名称，图片，说明，等级、美观，消耗物品，-->
 <ThingDefs><List>
+	<!--精元丹-回满-->
+	<ThingDef Type="Item" Name="Item_Dan_JingYuan99" Parent="DanBase">
+		<ThingName>精元丹-回满</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>回满精元。</Desc>	
+		<Rate>9</Rate>
+		<Beauty>16</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_JingYuan99</Modifier>
+			</Elixir>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<PracticeNutrition>9999</PracticeNutrition>		
+			</Food>	
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "10"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
 	<!--超人丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen1" Parent="DanBase">
-		<ThingName>技能丹</ThingName>
+		<ThingName>超人丹</ThingName>
 		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
 		<Desc>长生不老, 五维和能力拉满, 辟谷, 寿命增加一亿, 心如止水, 百倍工作效率和移速</Desc>	
 		<Rate>12</Rate>
@@ -35,7 +68,7 @@
 
 	<!--剑仙丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen2" Parent="DanBase">
-		<ThingName>灵力丹</ThingName>
+		<ThingName>剑仙丹</ThingName>
 		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
 		<Desc>根本灵气和灵气回复增加一亿, 法宝位全开, 剑修能力增加百倍</Desc>	
 		<Rate>12</Rate>
