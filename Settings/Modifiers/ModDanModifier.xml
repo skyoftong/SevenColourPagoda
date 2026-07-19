@@ -76,25 +76,68 @@
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
+		<BaseFive>100,100,100,100,100</BaseFive>
 		<Properties>
-			<li Name="MaxAge" AddV="1000"/>
-		</Properties>
+			<li Name="TreatmentExpectQuality" AddP="200"/>
+			<li Name="NutritionConsumeConstant" AddP="-100"/>
+			<li Name="FatigueConsumeConstant" AddP="-100"/>
+			<li Name="NutritionToJingYuanK" AddV="1000"/>
+			<li Name="NutritionWaterAutoRecover" AddV="1000"/>
+			<li Name="MaxAge" AddV="100000000"/>
+			<li Name="MindStateBaseValue" AddV="10000"/>
+			<li Name="SpeedOfMindStateCoefficient" AddP="-100"/>
+			<li Name="GlobalEfficiency" AddP="100"/>
+			<li Name="MoveSpeed" AddP="100"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="100"/>
+			<li Name="ToleranceTMin" AddV="-273"/>
+			<li Name="ToleranceTMax" AddV="10000"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="10000"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="100"/>
+			<li Name="NpcFight_BaseHitChance" AddP="10"/>
+			<li Name="NpcFight_BaseDodgeChance" AddV="10"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="10"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="10"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="10"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="10"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="10"/>
+			<li Name="RecoveryPower" AddP="100"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="100"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="100"/>
+			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
+			<li Name="NpcFight_SneakValue" AddV="500"/>	
+			<li Name="AgeCostSpeed" AddP="-100"/>
 		<Skills>
-                <li Name="Manual" Level="50"/>
-                <li Name="DanQi" Level="50"/>
-                <li Name="Medicine" Level="50"/>
-                <li Name="Barrier" Level="50"/>
-                <li Name="FightSkill" Level="50"/>
-                <li Name="Fabao" Level="50"/>
-                <li Name="SocialContact" Level="50"/>
-                <li Name="Qi" Level="50"/>
-                <li Name="Art" Level="50"/>
-                <li Name="Cooking" Level="50"/>
-                <li Name="Building" Level="50"/>
-                <li Name="Farming" Level="50"/> 
-                <li Name="Mining" Level="50"/>
-                <li Name="DouFa" Level="50"/>
-                <li Name="Manual" Level="50"/> 
+			<li Name="Manual" LevelOver="210"/>
+			<li Name="DanQi" LevelOver="210"/>
+			<li Name="Medicine" LevelOver="210"/>
+			<li Name="Barrier" LevelOver="210"/>
+			<li Name="FightSkill" LevelOver="210"/>
+			<li Name="Fabao" LevelOver="210"/>
+			<li Name="SocialContact" LevelOver="210"/>
+			<li Name="Qi" LevelOver="210"/>
+			<li Name="Art" LevelOver="210"/>
+			<li Name="Cooking" LevelOver="210"/>
+			<li Name="Building" LevelOver="210"/>
+			<li Name="Farming" LevelOver="210"/> 
+			<li Name="Mining" LevelOver="210"/>
+			<li Name="DouFa" LevelOver="210"/>
+			<li Name="Manual" LevelOver="210"/> 
+			<li Name="Manual" Level="240"/>
+			<li Name="DanQi" Level="240"/>
+			<li Name="Medicine" Level="240"/>
+			<li Name="Barrier" Level="240"/>
+			<li Name="FightSkill" Level="240"/>
+			<li Name="Fabao" Level="240"/>
+			<li Name="SocialContact" Level="240"/>
+			<li Name="Qi" Level="240"/>
+			<li Name="Art" Level="240"/>
+			<li Name="Cooking" Level="240"/>
+			<li Name="Building" Level="240"/>
+			<li Name="Farming" Level="240"/> 
+			<li Name="Mining" Level="240"/>
+			<li Name="DouFa" Level="240"/>
+			<li Name="Manual" Level="240"/> 
         </Skills>
+		</Properties>
 	</Modifier>
 </List></ModifierDefs>
