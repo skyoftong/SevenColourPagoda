@@ -65,7 +65,6 @@
 			<Value>3</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--剑仙丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen2" Parent="DanBase">
 		<ThingName>剑仙丹</ThingName>
@@ -99,7 +98,6 @@
 			<Value>3</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--劫灭丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen3" Parent="DanBase">
 		<ThingName>劫灭丹</ThingName>
@@ -132,7 +130,6 @@
 			<Value>3</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--天道丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen4" Parent="DanBase">
 		<ThingName>天道丹</ThingName>
@@ -165,7 +162,6 @@
 			<Value>3</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--功德丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen5" Parent="DanBase">
 		<ThingName>功德丹</ThingName>
@@ -198,7 +194,6 @@
 			<Value>3</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--体修丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen6" Parent="DanBase">
 		<ThingName>体修丹</ThingName>
@@ -231,7 +226,6 @@
 			<Value>3</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--金灵丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen7" Parent="DanBase">
 		<ThingName>金灵丹</ThingName>
@@ -264,7 +258,6 @@
 			<Value>100</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--木灵丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen8" Parent="DanBase">
 		<ThingName>木灵丹</ThingName>
@@ -297,7 +290,6 @@
 			<Value>100</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--水灵丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen9" Parent="DanBase">
 		<ThingName>水灵丹</ThingName>
@@ -330,7 +322,6 @@
 			<Value>100</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--火灵丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen10" Parent="DanBase">
 		<ThingName>火灵丹</ThingName>
@@ -363,7 +354,6 @@
 			<Value>100</Value>   
 		</Element>
 	</ThingDef>
-
 	<!--土灵丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen11" Parent="DanBase">
 		<ThingName>土灵丹</ThingName>
@@ -396,5 +386,4 @@
 			<Value>100</Value>   
 		</Element>
 	</ThingDef>
-
 </List></ThingDefs>
