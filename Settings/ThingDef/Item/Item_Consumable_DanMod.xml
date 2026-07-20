@@ -192,4 +192,164 @@
 			<Value>3</Value>
 		</Element>
 	</ThingDef>
+	<!--金灵丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen7" Parent="DanBase">
+		<ThingName>金灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>金元素凝结而成的丹药, 可将五维和能力拉满, 并长生不老</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<Modifier>Dan_ChaoRen7</Modifier>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>100</Value>
+		</Element>
+	</ThingDef>
+	<!--木灵丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen8" Parent="DanBase">
+		<ThingName>木灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>木元素凝结而成的丹药, 可将五维和能力拉满, 并长生不老</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<Modifier>Dan_ChaoRen7</Modifier>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>100</Value>
+		</Element>
+	</ThingDef>
+	<!--水灵丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen9" Parent="DanBase">
+		<ThingName>水灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>水元素凝结而成的丹药, 可将五维和能力拉满, 并长生不老</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<Modifier>Dan_ChaoRen7</Modifier>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>100</Value>
+		</Element>
+	</ThingDef>
+	<!--火灵丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen10" Parent="DanBase">
+		<ThingName>火灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>火元素凝结而成的丹药, 可将五维和能力拉满, 并长生不老</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<Modifier>Dan_ChaoRen7</Modifier>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>100</Value>
+		</Element>
+	</ThingDef>
+	<!--土灵丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen11" Parent="DanBase">
+		<ThingName>土灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>土元素凝结而成的丹药, 可将五维和能力拉满, 并长生不老</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<Modifier>Dan_ChaoRen7</Modifier>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>100</Value>
+		</Element>
+	</ThingDef>
 </List></ThingDefs>
