@@ -1,0 +1,1186 @@
+
+
+<Defs>
+	<List>
+	   <Def Name="Mutation_Effect_Yang_FoodsDropCoin" Parent="Mutation_Effect_YangBase"> 
+			<DisplayName>吃出硬币</DisplayName>
+			<Desc>所有食物都有极小概率吃出硬币。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>FoodsDropCoin</Kind>
+					<sParam1>Item_Yingbi1,Item_Yingbi2,Item_Yingbi3</sParam1>		 <!--每次从3个里随机选1个-->
+					<fParam1>0.02</fParam1>
+				</li>
+			</Effects>
+		</Def>
+	   <Def Name="Mutation_Effect_Yang_FoodsDropCoin2" Parent="Mutation_Effect_YangBase"> 
+			<DisplayName>吃出硬币</DisplayName>
+			<Desc>所有食物都有小概率吃出硬币。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>FoodsDropCoin</Kind>
+					<sParam1>Item_Yingbi1,Item_Yingbi2,Item_Yingbi3</sParam1>
+					<fParam1>0.04</fParam1>
+				</li>
+			</Effects>
+		</Def>
+
+	   <Def Name="Mutation_Effect_Yang_FoodsDropCoin3" Parent="Mutation_Effect_YangBase"> 
+			<DisplayName>吃出硬币</DisplayName>
+			<Desc>所有食物都有大概率吃出硬币。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>FoodsDropCoin</Kind>				   
+					<sParam1>Item_Yingbi1,Item_Yingbi2,Item_Yingbi3</sParam1>
+					<fParam1>0.1</fParam1>
+				</li>
+			</Effects>
+		</Def>
+
+	   <Def Name="Mutation_Effect_Yang_FaBaoSpecialAbility" Parent="Mutation_Effect_YangBase"> 
+			<DisplayName>法宝获得效果</DisplayName>
+			<Desc>法宝炼成时获得随机秘宝特效。</Desc>
+			<Level>3</Level>
+			<Weight>-1,300,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>FaBaoSpecialAbility</Kind>   
+					<SpecialAbilities>
+						<li Kind="HitCountAddMirror" nParam1="3" nParam2="9" fParam1="3" Desc="每攻击3次，产生9道蚊须分形，持续3秒。"/>
+					</SpecialAbilities>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_PlantIgnoreTemp" Parent="Mutation_Effect_YangBase"> 
+			<DisplayName>植物忽略温度条件</DisplayName>
+			<Desc>门派植物生长忽略温度条件。</Desc>
+			<Level>3</Level>
+			<Weight>-1,150,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>PlantIgnoreTemp</Kind>
+				</li>
+			</Effects>
+		</Def>
+
+		 <Def Name="Mutation_Effect_Yang_Persuasion" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微提高门派弟子的劝说成功率。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>Persuasion</Kind>
+					<fParam1>0.05</fParam1>
+				</li>
+			</Effects>
+		</Def>
+		 <Def Name="Mutation_Effect_Yang_Persuasion2" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子的劝说成功率。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>Persuasion</Kind>
+					<fParam1>0.1</fParam1>
+				</li>
+			</Effects>
+		</Def>
+		 <Def Name="Mutation_Effect_Yang_Persuasion3" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅度提高门派弟子的劝说成功率。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>Persuasion</Kind>
+					<fParam1>0.3</fParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		 <Def Name="Mutation_Effect_Yang_PuppetDropHPStop" Parent="Mutation_Effect_YangBase"> 
+			<Desc>傀儡停止磨损。</Desc>
+			<Level>3</Level>
+			<Weight>-1,150,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>PuppetDropHPStop</Kind>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_1" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微提高门派弟子灵气恢复速度。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_LingAbsorbSpeed_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_2" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子灵气恢复速度。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_LingAbsorbSpeed_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_3" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅提高门派弟子灵气恢复速度。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_LingAbsorbSpeed_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_4" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子修炼速度。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_DeepPracticeSpeedSpecialCoefficient_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_5" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅提高门派弟子修炼速度。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_DeepPracticeSpeedSpecialCoefficient_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_6" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子变得不容易饥饿。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_NutritionConsumeConstant_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_7" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子变得不容易疲劳。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_FatigueConsumeConstant_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_8" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子变得不容易口渴。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_WaterConsumeConstant_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_9" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微提高门派弟子的护体真气强度。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_NpcFight_ShieldConversionRate_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_10" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子的护体真气强度。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_NpcFight_ShieldConversionRate_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_11" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微提高门派弟子突破瓶颈的概率。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_PracticeRateAddPFromDan_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_12" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子突破瓶颈的概率。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_PracticeRateAddPFromDan_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_13" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅提高门派弟子突破瓶颈的概率。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_PracticeRateAddPFromDan_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_14" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微提高门派弟子饮气辟谷的能力。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_NutritionWaterAutoRecover_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_15" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子饮气辟谷的能力。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_NutritionWaterAutoRecover_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_16" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅提高门派弟子饮气辟谷的能力。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_NutritionWaterAutoRecover_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_17" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微减少门派弟子道行加值。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_AbilityLvAddV_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_18" Parent="Mutation_Effect_YangBase"> 
+			<Desc>减少门派弟子道行加值。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_AbilityLvAddV_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_19" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅减少门派弟子道行加值。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_AbilityLvAddV_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_20" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微增加门派弟子寿元上限。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_MaxAge_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_21" Parent="Mutation_Effect_YangBase"> 
+			<Desc>增加门派弟子寿元上限。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_MaxAge_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_22" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅增加门派弟子寿元上限。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_MaxAge_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_23" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微提高门派弟子移动速度。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_MoveSpeed_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_24" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子移动速度。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_MoveSpeed_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_25" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅提高门派弟子移动速度。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_MoveSpeed_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_26" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子筑基速度。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BasepracticeSpeed_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_27" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅提高门派弟子筑基速度。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BasepracticeSpeed_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_28" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子学习速度。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_IntelligenceSkillEXPConstant_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_29" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅提高门派弟子学习速度。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_IntelligenceSkillEXPConstant_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_30" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微提高门派弟子全局工作速度。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_GlobalEfficiency_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_31" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子全局工作速度。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_GlobalEfficiency_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_32" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅提高门派弟子全局工作速度。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_GlobalEfficiency_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_33" Parent="Mutation_Effect_YangBase"> 
+			<Desc>略微提高门派弟子心境基础值。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_MindStateBaseValue_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_34" Parent="Mutation_Effect_YangBase"> 
+			<Desc>提高门派弟子心境基础值。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_MindStateBaseValue_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_35" Parent="Mutation_Effect_YangBase"> 
+			<Desc>大幅提高门派弟子心境基础值。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_MindStateBaseValue_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_36" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子阵法负荷能力大幅提高。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_ZhenEnginePower_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_37" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子阵法负荷能力大幅提高。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_ZhenEnginePower_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+		<Def Name="Mutation_Effect_Yang_Modifier_40" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子战斗技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_41" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子战斗技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_42" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子战斗技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_43" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子处世技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_4</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_44" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子处世技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_5</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_45" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子处世技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_6</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_46" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子雅艺技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_7</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_47" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子雅艺技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_8</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_48" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子雅艺技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_9</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_49" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子气感技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_10</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_50" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子气感技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_11</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_51" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子气感技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_12</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_52" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子巧匠/炼器技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_13</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_53" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子巧匠/炼器技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_14</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_54" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子巧匠/炼器技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_15</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_55" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子岐黄/炼丹技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_16</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_56" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子岐黄/炼丹技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_17</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_57" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子岐黄/炼丹技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_18</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_58" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子御器技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_19</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_59" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子御器技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_20</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_60" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子御器技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_21</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_61" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子术法技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_22</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_62" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子术法技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_23</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_63" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子术法技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_24</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_64" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子护体技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_25</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_65" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子护体技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_26</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_66" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子护体技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_27</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_67" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子阵法技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_28</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_68" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子阵法技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_29</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_69" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子阵法技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_30</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_70" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子金石技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_31</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_71" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子金石技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_32</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_72" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子金石技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_33</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_73" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子农耕技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_34</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_74" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子农耕技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_35</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_75" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子农耕技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_36</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_76" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子版筑技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_37</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_77" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子版筑技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_38</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_78" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子版筑技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_39</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_79" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子烹饪技能等级＋1（提高上限）。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_40</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_80" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子烹饪技能等级＋1。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_41</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_81" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子烹饪技能等级＋2。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_Skills_42</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_82" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子魅力提高1成。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_1</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_83" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子魅力提高3成。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_2</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_84" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子魅力提高5成。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_3</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_85" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子悟性提高1成。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_4</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_86" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子悟性提高3成。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_5</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_87" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子悟性提高5成。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_6</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_88" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子机缘提高1成。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_7</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_89" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子机缘提高3成。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_8</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_90" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子机缘提高5成。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_9</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_91" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子神识提高1成。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_10</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_92" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子神识提高3成。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_11</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_93" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子神识提高5成。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_12</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_94" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子根骨提高1成。</Desc>
+			<Level>1</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_13</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_95" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子根骨提高3成。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_14</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_96" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子根骨提高5成。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_15</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_97" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子五维提高1成。</Desc>
+			<Level>2</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_16</sParam1>
+				</li>
+			</Effects>
+		</Def>
+		<Def Name="Mutation_Effect_Yang_Modifier_38" Parent="Mutation_Effect_YangBase"> 
+			<Desc>门派弟子五维提高3成。</Desc>
+			<Level>3</Level>
+			<Weight>-1,100,-1</Weight>
+			<Effects>
+				<li>
+					<Kind>ModifierChange</Kind>
+					<sParam1>Modifier_Mutation_Yang_BaseFive_17</sParam1>
+				</li>
+			</Effects>
+		</Def>
+
+	</List>
+</Defs>

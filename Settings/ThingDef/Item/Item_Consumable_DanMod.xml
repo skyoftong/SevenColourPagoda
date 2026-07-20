@@ -64,7 +64,7 @@
 			<Value>3</Value>
 		</Element>
 	</ThingDef>
-		<!--劫灭丹-->
+	<!--劫灭丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen3" Parent="DanBase">
 		<ThingName>劫灭丹</ThingName>
 		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>

@@ -1,0 +1,423 @@
+<Defs>
+    <List>
+        <Def Name="Mutation_Card_Debug"> 
+            <DisplayName>失落之道</DisplayName>
+            <Desc>由于未知原因，这个异动只留下一缕微弱的气息，无法发挥出任何效果。</Desc>
+            <Weight>100,100,100</Weight>
+            <NotRandom>1</NotRandom>
+            <Condition></Condition> <!--如果有条件，就配置条件，无条件就不配-->
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_AnimalToMonster"> 
+            <DisplayName>化妖天灾</DisplayName>
+            <Desc>动物死亡后有概率变为妖兽</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition></Condition> <!--如果有条件，就配置条件，无条件就不配-->
+            <Effects>
+                <li>Mutation_Effect_Constant_AnimalToMonster</li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ElixirGas"> 
+            <DisplayName>丹气四溢</DisplayName>
+            <Desc>炼丹成功时会增加场景中的五行丹气，五行丹气根据不同的比例提供不同的效果。</Desc>
+            <Weight>-1,-1,200</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_ElixirGas</li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_LifeLost"> 
+            <DisplayName>遽然之命</DisplayName>
+            <Desc>食用药物获得更少耐药性，但是角色寿元会以100倍速度流逝</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_LifeLost</li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_AncientStoneChest"> 
+            <DisplayName>深岩邪咒</DisplayName>
+            <Desc>挖出古旧石匣的概率大幅度提高，但是一旦挖到就会让挖矿弟子死亡。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_AncientStoneChest</li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_LinQiSurge"> 
+            <DisplayName>天象圣威</DisplayName>
+            <Desc>每次天气到来都伴随灵气爆发，但是改变天气会付出生命代价。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <NotRandom>0</NotRandom>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_LinQiSurge</li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_GoodsExpensiveButSuppliesCheaper"> 
+            <DisplayName>人心逐利</DisplayName>
+            <Desc>商人售价五折，收购物资价格翻倍，但单次商人周期内，商品越买越贵，物资越卖越便宜。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_GoodsExpensiveButSuppliesCheaper</li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_FiveElementsRelationChange">
+            <DisplayName>五行逆转</DisplayName>
+            <Desc>五行生克关系发生一次颠倒。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_FiveElementsRelationChange</li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_CantDrawFuAndRandomFu">
+            <DisplayName>符道崩毁</DisplayName>
+            <Desc>无法手动画符，但是画符会得到随机结果。角色可以激活更多符咒。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_CantDrawFuAndRandomFu</li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_RefineMustSuccess"> 
+            <DisplayName>神器命定</DisplayName>
+            <Desc>淬炼必定成功，但是消耗更多的资源。</Desc>
+            <Weight>-1,-1,150</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_RefineMustSuccess</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_NpcAvoidDangerAutomatically"> 
+            <DisplayName>和谐之世</DisplayName>
+            <Desc>其他修行者好感获取大幅提高，且可以直接破除心防，但其他修行者也会自动规避危险。</Desc>
+            <Weight>-1,-1,150</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_NpcAvoidDangerAutomatically</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_RealTime"> 
+            <DisplayName>时轴更定</DisplayName>
+            <Desc>所有秘闻事件触发的天数缩短到1/3，弟子外出驻扎的时间将变为真实。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_RealTime</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_SupplyBox"> 
+            <DisplayName>末世余烬</DisplayName>
+            <Desc>地图迷雾自动消除。全世界都无法获得屠宰、收获、开采、砍伐的产出，但是门派中每日会有补给箱从天而降。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition></Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_SupplyBox</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_GetGoodBadScoreRandom"> 
+            <DisplayName>举世互联</DisplayName>
+            <Desc>通过各种途径获取声望时，获取的声望正邪随机，获取声望的倍率在0.1~10之间随机。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_GetGoodBadScoreRandom</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_UnlockGong"> 
+            <DisplayName>道果危悬</DisplayName>
+            <Desc>筑基需要的筑基值，修行所需的修行值增幅5倍。修行界为道统延续，也向所有修行者公开了全部修行功法。</Desc>
+            <Weight>-1,-1,150</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_UnlockGong</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Yang"> 
+            <DisplayName>阳极宝地</DisplayName>
+            <Desc>门派风水恒定为最高，门派基础聚灵效果提高100点，所有地块火木属性增加，但地图基础温度提高20°</Desc>
+            <Weight>-1,-1,1500</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_Yang</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Yin"> 
+            <DisplayName>阴极宝地</DisplayName>
+            <Desc>门派风水恒定为最高，门派基础聚灵效果提高100点，所有地块金水属性增加，但地图基础温度降低20°</Desc>
+            <Weight>-1,-1,1500</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_Yin</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_1"> 
+            <DisplayName>怪物猎人：兔</DisplayName>
+            <Desc>击杀7只兔，获得一个稀奇的物件；触发后，下次需要的数量递增。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_All_Kill_1</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_Hunter_1</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_2"> 
+            <DisplayName>怪物猎人：狼</DisplayName>
+            <Desc>击杀5只狼，获得一个稀奇的物件；触发后，下次需要的数量递增。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_All_Kill_2</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_Hunter_2</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_3"> 
+            <DisplayName>怪物猎人：熊</DisplayName>
+            <Desc>击杀3头熊，获得一个稀奇的物件；触发后，下次需要的数量递增。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_All_Kill_3</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_Hunter_3</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_4"> 
+            <DisplayName>怪物猎人：龟</DisplayName>
+            <Desc>击杀7只龟，获得一个稀奇的物件；触发后，下次需要的数量递增。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_All_Kill_4</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_Hunter_4</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_5"> 
+            <DisplayName>怪物猎人：虎</DisplayName>
+            <Desc>击杀5只虎，获得一个稀奇的物件；触发后，下次需要的数量递增。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_All_Kill_5</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_Hunter_5</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_6"> 
+            <DisplayName>怪物猎人：牛</DisplayName>
+            <Desc>击杀5头牛，获得一个稀奇的物件；触发后，下次需要的数量递增。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_All_Kill_6</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_Hunter_6</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_7"> 
+            <DisplayName>怪物猎人：鸡</DisplayName>
+            <Desc>击杀7只鸡，获得一个稀奇的物件；触发后，下次需要的数量递增。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_All_Kill_7</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_Hunter_7</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_8"> 
+            <DisplayName>怪物猎人：蛇</DisplayName>
+            <Desc>击杀5条蛇，获得一个稀奇的物件；触发后，下次需要的数量递增。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_All_Kill_8</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_Hunter_8</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_GetItem_1"> 
+            <DisplayName>怀璧其罪</DisplayName>
+            <Desc>获得数件稀世珍宝，但是所有门派对本门的好感大幅度降低</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_GetItem_1</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_OuterDiscipleRoomDemand"> 
+            <DisplayName>仙根天生</DisplayName>
+            <Desc>外门弟子获得飞行能力，但是对房间的需求变高</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_OuterDiscipleRoomDemand</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_GetItem_2"> 
+            <DisplayName>天道恩赐</DisplayName>
+            <Desc>每次门派声望等级提升，都会获得一件珍奇之物</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_All_SchoolLevelUp_1</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_GetItem_2</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Sacrific"> 
+            <DisplayName>祭妖盛典</DisplayName>
+            <Desc>开启祭妖盛典，但每次祭妖都会引起万妖殿的愤怒（可通过祖师殿进行祭妖）</Desc>
+            <Weight>-1,-1,2000</Weight>
+            <CoverEffects>
+                <li>Mutation_Effect_Constant_Sacrific</li>
+            </CoverEffects>
+            <Condition>MutationCondition_Constant_All_Sacrific_1</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_GetSchoolRelation</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_FengShuiChange"> 
+            <DisplayName>逆天之宗</DisplayName>
+            <Desc>门派弟子皆为天纵之才，弟子所有能力+2（提高上限），但你的宗门遭受天妒，所有镇物恒定为逆镇物</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_FengShuiChange</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_2"> 
+            <DisplayName>深山居士</DisplayName>
+            <Desc>门派弟子深居简出，专研炼宝，却逐渐荒废了历练的本领；历练相关能力大幅下降，炼器技能＋5（提高上限），炼丹技能+5（提高上限），学习能力提高。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_2</li>
+                <li>Mutation_Effect_Constant_ModifierChange_1</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_4"> 
+            <DisplayName>长袖善舞</DisplayName>
+            <Desc>门派弟子心思活跃善于交际，却因人心浮躁难以潜心修炼；心境降低，雅艺+5（提高上限），处世技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_4</li>
+                <li>Mutation_Effect_Constant_ModifierChange_3</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_5"> 
+            <DisplayName>避轻就重</DisplayName>
+            <Desc>门派弟子不惧劳苦，善于重体力工作，但因此疏远精细活计；手工相关能力大幅下降，版筑技能＋10，金石技能＋10</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_5</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_6"> 
+            <DisplayName>拳脚讲理</DisplayName>
+            <Desc>门派弟子精于拳脚功夫，却不善言辞；处世技能－5，战斗技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_6</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_7"> 
+            <DisplayName>贪食氤氲</DisplayName>
+            <Desc>门派弟子亲近自然，气感极好，但因此变得更容易感到饥渴与疲劳（气感＋10）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_7</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_8"> 
+            <DisplayName>福寿绵长</DisplayName>
+            <Desc>门派弟子注重养生，对寒冷的天气更加敏感，但也变得更加长寿。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_8</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_9"> 
+            <DisplayName>灵感天机</DisplayName>
+            <Desc>所有弟子更容易感应天道，从根本上提高灵气上限，但是所有天劫也会提前到来</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_9</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_10"> 
+            <DisplayName>以守代攻</DisplayName>
+            <Desc>门派弟子醉心于守御之技，不喜战斗技艺，擅长以守代攻。战斗技能－5，护体技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_10</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_11"> 
+            <DisplayName>沉溺术法</DisplayName>
+            <Desc>门派弟子沉溺于术法一道，术法技艺高超，却因此荒废了修行；修炼速度大幅下降，术法技能＋10（提高上限）</Desc>
+            <Weight>-1,-1,400</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_11</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_12"> 
+            <DisplayName>一人得道</DisplayName>
+            <Desc>飞升1名弟子，全门派弟子在短期内筑基/修炼速度大幅提高</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Condition>MutationCondition_Constant_All_BrokenNeck_1</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_12</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_13"> 
+            <DisplayName>杀伐之道</DisplayName>
+            <Desc>天道动荡之下，筑基与修炼速度大幅降低。但内门弟子可在杀伐中，通过击杀金丹期及以上的修行者获得修为。</Desc>
+            <Weight>-1,-1,0</Weight>
+            <Condition>MutationCondition_Constant_One_Kill_1</Condition>
+            <Effects>
+                <li>Mutation_Effect_Constant_GetStageValue_1</li>
+            </Effects>
+            <CoverEffects>
+                <li>Mutation_Effect_Constant_ModifierChange_13</li>
+            </CoverEffects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_14"> 
+            <DisplayName>沉溺御器</DisplayName>
+            <Desc>门派弟子沉溺于御器一道，御器技艺高超，却因此荒废了研习；学习速度大幅下降，御器技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>Mutation_Effect_Constant_ModifierChange_14</li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Yang_FaBaoSpecialAbility"> 
+            <DisplayName>法宝获得效果</DisplayName>
+            <Desc>法宝炼成时获得随机秘宝特效</Desc>
+            <Weight>-1,-1,1000</Weight>
+            <Effects>
+                <li>Mutation_Effect_Yang_FaBaoSpecialAbility</li>
+            </Effects>
+       </Def>
+
+    </List>
+</Defs>

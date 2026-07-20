@@ -1,0 +1,981 @@
+<Defs>
+    <List>
+        <Def Name="Mutation_Effect_Constant_AnimalToMonster"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>化妖天灾</DisplayName>
+            <Desc>动物死亡后有概率变为妖兽</Desc>
+            <Weight>-1,100,100</Weight>   
+            <Effects>
+                <li>
+                    <Kind>AnimalToMonster</Kind>
+                    <fParam1>0.25</fParam1>
+                    <nParam1>10</nParam1>
+                    <fParam2>0.07</fParam2>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ElixirGas"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>丹气四溢</DisplayName>
+            <Desc>炼丹成功时会增加场景中的五行丹气，五行丹气根据不同的比例提供不同的效果。</Desc>
+            <Weight>-1,100,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ElixirGas</Kind>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_LifeLost"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>遽然之命</DisplayName>
+            <Desc>食用药物获得更少耐药性，但是角色寿元会以100倍速度流逝</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>DrugResistance</Kind>
+                    <fParam1>0.5</fParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_AgeCostSpeed_1</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_AncientStoneChest"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>深岩邪咒</DisplayName>
+            <Desc>挖出古旧石匣的概率大幅度提高，但是一旦挖到就会让挖矿弟子死亡。</Desc>
+            <Weight>100,100,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>AncientStoneChest</Kind>
+                    <fParam1>0.05</fParam1>
+                    <sParam1>深岩邪咒</sParam1><!--死因-->
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_LinQiSurge"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>天象圣威</DisplayName>
+            <Desc>每次天气到来都伴随灵气爆发，但是改变天气会付出生命代价。</Desc>
+            <Weight>100,100,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>LinQiSurge</Kind>
+                    <sParam1>天象圣威</sParam1><!--死因-->
+                    <sParam2>LingUpWave_Mutation</sParam2>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_GoodsExpensiveButSuppliesCheaper"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>人心逐利</DisplayName>
+            <Desc>商人售价五折，收购物资价格翻倍，但单次商人周期内，商品越买越贵，物资越卖越便宜。</Desc>
+            <Weight>-1,100,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GoodsExpensiveButSuppliesCheaper</Kind>
+                    <fParam1>-0.5</fParam1>   <!--商人售价折扣倍率-->
+                    <fParam2>1</fParam2>     <!--商人收购价格变化倍率-->
+                    <fParam3>0.1</fParam3>   <!--单次买的价格变化倍率 递增 -->
+                    <fParam4>-0.1</fParam4>  <!--单次卖的价格变化倍率 递减-->
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_FiveElementsRelationChange"  Parent="Mutation_Effect_ConstantBase">
+            <DisplayName>五行逆转</DisplayName>
+            <Desc>五行生克关系发生一次颠倒。</Desc>
+            <Weight>-1,100,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>FiveElementsRelationChange</Kind>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_CantDrawFuAndRandomFu"  Parent="Mutation_Effect_ConstantBase">
+            <DisplayName>符道崩毁</DisplayName>
+            <Desc>无法手动画符，但是画符会得到随机结果。角色可以激活更多符咒。</Desc>
+            <Weight>-1,100,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>CantDrawFuAndRandomFu</Kind><!--需要加一组随机品质范围的配置，随机的符品质将会在范围中进行随机-->
+                </li>
+                <li>
+                    <Kind>SpellActivation</Kind>
+                    <nParam1>3</nParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_RefineMustSuccess"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>神器命定</DisplayName>
+            <Desc>淬炼必定成功，但是消耗更多的资源。</Desc>
+            <Weight>100,100,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>RefineMustSuccess</Kind>
+                    <fParam1>1</fParam1>
+                </li>
+                <li>
+                    <Kind>RefineCostChange</Kind>
+                    <nParam1>9</nParam1>
+                 </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_NpcAvoidDangerAutomatically"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>和谐之世</DisplayName>
+            <Desc>其他修行者好感获取大幅提高，且可以直接破除心防，但其他修行者也会自动规避危险。</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>NpcFavourChange</Kind>
+                    <fParam1>2</fParam1>
+                </li>
+                <li>
+                    <Kind>EasyHeartlock</Kind>
+                </li>
+                <li>
+                    <Kind>NpcAvoidDangerAutomatically</Kind>
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_RealTime"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>时轴更定</DisplayName>
+            <Desc>所有秘闻事件触发的天数缩短到1/3，弟子外出驻扎的时间将变为真实。</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>MapSecretTriggerTimeChange</Kind>
+                    <fParam1>-0.66</fParam1>
+                </li>
+                <li>
+                    <Kind>DiscipleGoOutRealTime</Kind>
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_SupplyBox"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>末世余烬</DisplayName>
+            <Desc>地图迷雾自动消除。无法获得屠宰、收获、开采、砍伐的产出，但是每日会有补给箱从天而降。</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>MapFogRemoval</Kind>
+                </li>                
+                <li>
+                    <Kind>BanFightmapItem</Kind>
+                    <nParam1>6</nParam1>
+                </li>
+                <li>
+                    <Kind>VainWork</Kind>
+                </li>
+                <li>
+                    <Kind>EventTrigger</Kind>
+                    <nParam1>50001</nParam1>
+                    <nParam2>1</nParam2>
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_GetGoodBadScoreRandom"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>举世互联</DisplayName>
+            <Desc>通过各种途径获取声望时，获取的声望正邪随机，获取声望的倍率在0.1~10之间随机。</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetGoodBadScoreRandom</Kind>
+                    <fParam1>0.1</fParam1>
+                    <fParam2>10</fParam2>
+                 </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_UnlockGong"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>道果危悬</DisplayName>
+            <Desc>筑基需要的筑基值，修行所需的修行值增幅5倍。修行界为道统延续，也向所有修行者公开了全部修行功法。</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ZhuJiBaseValueChange</Kind>
+                    <fParam1>4</fParam1>
+                 </li>
+                <li>
+                    <Kind>StageValueChange</Kind>
+                    <fParam1>4</fParam1>
+                 </li>
+                <li>
+                    <Kind>UnlockGong</Kind>
+                    <sParam1>Gong_1_Shui,Gong_2_Mu,Gong_3_Jin,Gong_4_None,Gong_5_Tu,Gong_6_Huo,Gong_7_Huo,Gong_8_Jin,Gong_9_Mu,Gong_10_Huo,Gong_11_Tu,Gong_12_None,Gong_13_None,God_Gong_1,God_Gong_2,God_Gong_3,Body_Gong_1,Body_Gong_2,Body_Gong_3,Body_Gong_5</sParam1>
+                    <nParam1>1</nParam1>
+                 </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Yang"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>阳极宝地</DisplayName>
+            <Desc>门派风水恒定为最高，门派基础聚灵效果提高100点，所有地块火木属性增加，但地图基础温度提高20°</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>BeginWeather</Kind>
+                    <sParam1>Yang_Mutation</sParam1>
+                 </li>
+                <li>
+                    <Kind>SchoolFengShuiChange</Kind>
+                 </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Yin"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>阴极宝地</DisplayName>
+            <Desc>门派风水恒定为最高，门派基础聚灵效果提高100点，所有地块金水属性增加，但地图基础温度降低20°</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>BeginWeather</Kind>
+                    <sParam1>Yin_Mutation</sParam1>
+                 </li>
+                <li>
+                    <Kind>SchoolFengShuiChange</Kind>
+                 </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_1"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>怪物猎人</DisplayName>
+            <Desc>狩猎数只兔子后，出现了一件稀奇物件。</Desc>
+            <SpecialDesc>在本门弟子狩猎数只兔子后，出现了一件[TARGET]！</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_Yao_RabbitLuck</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_2"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>怪物猎人</DisplayName>
+            <Desc>狩猎数只狼后，出现了一件稀奇物件。</Desc>
+            <SpecialDesc>在本门弟子狩猎数只狼后，出现了一件[TARGET]！</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_Yao_WolfAtk</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_3"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>怪物猎人</DisplayName>
+            <Desc>狩猎数头熊后，出现了一件稀奇物件。</Desc>
+            <SpecialDesc>在本门弟子狩猎数头熊后，出现了一件[TARGET]！</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_Yao_BearPiMao</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_4"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>怪物猎人</DisplayName>
+            <Desc>狩猎数只龟后，出现了一件稀奇物件。</Desc>
+            <SpecialDesc>在本门弟子狩猎数只龟后，出现了一件[TARGET]！</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_Yao_TurtleKe</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_5"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>怪物猎人</DisplayName>
+            <Desc>狩猎数只虎后，出现了一件稀奇物件。</Desc>
+            <SpecialDesc>在本门弟子狩猎数只虎后，出现了一件[TARGET]！</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_Yao_TigerZhui</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_6"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>怪物猎人</DisplayName>
+            <Desc>狩猎数头牛后，出现了一件稀奇物件。</Desc>
+            <SpecialDesc>在本门弟子狩猎数头牛后，出现了一件[TARGET]！</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_Yao_CattleJiao</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_7"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>怪物猎人</DisplayName>
+            <Desc>狩猎数只鸡后，出现了一件稀奇物件。</Desc>
+            <SpecialDesc>在本门弟子狩猎数只鸡后，出现了一件[TARGET]！</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_Yao_ChickenGuan</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_Hunter_8"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>怪物猎人</DisplayName>
+            <Desc>狩猎数条蛇后，出现了一件稀奇物件。</Desc>
+            <SpecialDesc>在本门弟子狩猎数条蛇后，出现了一件[TARGET]！</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_Yao_SnakeHanLin</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_GetItem_1"  Parent="Mutation_Effect_ConstantBase"> 
+            <DisplayName>怀璧其罪</DisplayName>
+            <Desc>获得数件稀世珍宝，但是所有门派对本门的好感大幅度降低</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_Dan_HundredRefine</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_ExtremeLofty</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_EarthEssence_1</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_EarthEssence1_1</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_ReBorn_4</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_LingYuanZhong</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossFeng_TouYu</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossFeng_WeiYu</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossLong_Jiao</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossLong_NiLin</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossZhuLong_TianLin</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossZhuLong_LongYu</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_TreeEXP</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossZhuLong_Meat</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_YanDaoGuo</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>1,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>2,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>3,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>4,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>5,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>6,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>7,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>8,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>9,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>10,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>11,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>12,100</sParam1>
+                    <nParam1>-600</nParam1>
+                    <nParam2>-600</nParam2>
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_OuterDiscipleRoomDemand"  Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>外门弟子获得飞行能力，但是对房间的需求变高</Desc>
+            <Effects>
+                <li>
+                    <Kind>OuterDiscipleRoomDemand</Kind>
+                </li>
+                <li>
+                    <Kind>OuterDiscipleFlyAbility</Kind>
+                    <sParam1>Worker</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_GetItem_2"  Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>获得一件珍奇之物</Desc>
+            <SpecialDesc>随着门派声望大涨，凭空出现了一件[TARGET]！</SpecialDesc>
+            <Effects>
+                <li>
+                    <Kind>GetItemThing</Kind>
+                    <nParam1>1</nParam1>
+                    <Drops>
+                        <li>
+                            <ThingDef>Item_BossFeng_HuoYu</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossFeng_GangYu</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossFeng_Meat</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_DragonScale</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossLong_Lin</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossLong_Meat</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossZhuLong_BaiLin</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossZhuLong_HeiLin</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_BossZhuLong_Meat</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_IncreaseLife3</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_IncreaseLife5</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_FiveBaseFromLife</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_TreeEXP</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_Soul1</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_Soul2</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_Soul3</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_Soul4</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_ReBorn</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_YaoLeather1</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_StarEssence</ThingDef>
+                            <Count>1</Count>
+                            <Rate>1</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_ExtremeJade</ThingDef>
+                            <Count>1</Count>
+                            <Rate>0.5</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_ExtremeLofty</ThingDef>
+                            <Count>1</Count>
+                            <Rate>0.5</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_HundredRefine</ThingDef>
+                            <Count>1</Count>
+                            <Rate>0.5</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_EarthEssence1_1</ThingDef>
+                            <Count>1</Count>
+                            <Rate>0.5</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_EarthEssence_1</ThingDef>
+                            <Count>1</Count>
+                            <Rate>0.5</Rate>
+                        </li>
+                        <li>
+                            <ThingDef>Item_Dan_LingYuanZhong</ThingDef>
+                            <Count>1</Count>
+                            <Rate>0.2</Rate>
+                        </li>
+                    </Drops>  
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_Sacrific" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>开启祭妖</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>Sacrific</Kind>
+                    <nParam1>1</nParam1>
+                </li>
+            </Effects>
+       </Def>
+        <Def Name="Mutation_Effect_Constant_GetSchoolRelation" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>引起万妖殿的愤怒</Desc>
+            <SpecialDesc>祭妖的行为使万妖殿感到愤怒！</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>GetSchoolRelation</Kind>
+                    <sParam1>12,100</sParam1>
+                    <nParam1>-10</nParam1>
+                    <nParam2>-50</nParam2>
+                </li>
+            </Effects>
+       </Def>
+
+        <Def Name="Mutation_Effect_Constant_FengShuiChange" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子皆为天纵之才，弟子所有能力+2（提高上限），但你的宗门遭受天妒，所有镇物恒定为逆镇物</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>FengShuiChange</Kind>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_1</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_1" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子学习能力提升，炼丹技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_IntelligenceSkillEXPConstant_1</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_2</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_2" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子历练相关能力大幅下降，炼器技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Experience_1</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_3</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_3" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子雅艺技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_4</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_4" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>心境加值大幅下降，处世技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_MindStateBaseValue_1</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_5</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_5" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子手工相关能力大幅下降，版筑技能＋10，金石技能＋10</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Handwork_1</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_6</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_7</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_6" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子处世技能－5，战斗技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_8</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_9</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_7" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子更容易感到饥渴与疲劳（气感＋10）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_ConsumeConstant_1</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_10</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_8" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子寿元＋50，最适/极限温度下限－10/－20</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_MaxAge_1</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_ComfyTMin_1</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_9" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子灵气上限提高，所有天劫提前70%</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_NpcLingMaxValue_1</sParam1>
+                </li>
+                <li>
+                    <Kind>ThunderComingIncreasePercent</Kind>
+                    <fParam1>-0.7</fParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_10" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子战斗技能－5，护体技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_11</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_12</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_11" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子修炼速度大幅下降，术法技能＋10（提高上限）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_Skills_13</sParam1>
+                </li>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_DeepPracticeSpeedSpecialCoefficient_2</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_12" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子在短期内大幅提高筑基速度与修炼速度</Desc>
+            <SpecialDesc>[NPC]的飞升使全门派弟子的筑基速度与修炼速度在短期内大幅提高。</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_BasepracticeSpeedCoefficient_1</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_13" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子在大幅降低筑基速度与修炼速度</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_BasepracticeSpeedCoefficient_2</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_ModifierChange_14" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>门派弟子学习速度大幅下降，御器技能＋5（提高上限）</Desc>
+            <Weight>-1,-1,100</Weight>
+            <Effects>
+                <li>
+                    <Kind>ModifierChange</Kind>
+                    <sParam1>Modifier_Mutation_Constant_IntelligenceSkillEXPConstant_2</sParam1>
+                </li>
+            </Effects>
+        </Def>
+
+        <Def Name="Mutation_Effect_Constant_GetStageValue_1" Parent="Mutation_Effect_ConstantBase"> 
+            <Desc>获得修为值</Desc>
+            <SpecialDesc>[NPC]在完成击杀后修为大涨。</SpecialDesc>
+            <Weight>-1,-1,100</Weight>
+            <OneOnly>1</OneOnly>
+            <Effects>
+                <li>
+                    <Kind>GetStageValue</Kind>
+                    <nParam1>10000</nParam1>
+                    <nParam2>120000</nParam2>
+                </li>
+            </Effects>
+        </Def>
+
+	   <Def Name="Mutation_Effect_Yang_FaBaoSpecialAbility" Parent="Mutation_Effect_ConstantBase"> 
+			<DisplayName>法宝获得效果</DisplayName>
+			<Desc>法宝炼成时获得随机秘宝特效。</Desc>
+			<Level>3</Level>
+			<Weight>-1,-1,100</Weight>
+			<Effects>
+				<li>
+					<Kind>FaBaoSpecialAbility</Kind>   
+					<SpecialAbilities>
+						<li Kind="HitCountAddMirror" nParam1="3" nParam2="9" fParam1="3" Desc="每攻击3次，产生9道蚊须分形，持续3秒。"/>
+					</SpecialAbilities>
+				</li>
+			</Effects>
+		</Def>
+    </List>
+</Defs>
