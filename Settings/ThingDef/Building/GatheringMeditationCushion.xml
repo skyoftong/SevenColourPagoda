@@ -10,7 +10,7 @@
 			<li Frag="SeeTrain" />
 		</Frags>
 	<TexScale>0.9</TexScale>
-	<TexPath>res/Sprs/buildingnew/building_fazuo01</TexPath>
+	<TexPath>res/Spr/Object/Buildings/FaZuoPlus</TexPath>
 	<SelectAble>1</SelectAble>
 	<CastShadow>0</CastShadow>
 	<BlockLight>0</BlockLight>
