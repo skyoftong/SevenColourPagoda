@@ -64,4 +64,132 @@
 			<Value>3</Value>
 		</Element>
 	</ThingDef>
+		<!--劫灭丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen3" Parent="DanBase">
+		<ThingName>劫灭丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>天劫推迟10年</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<Modifier>Dan_ChaoRen3</Modifier>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>
+		</Element>
+	</ThingDef>
+	<!--天道丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen4" Parent="DanBase">
+		<ThingName>天道丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>海量增加参悟</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<TreeExp>100000000</TreeExp>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>
+		</Element>
+	</ThingDef>
+	<!--功德丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen5" Parent="DanBase">
+		<ThingName>功德丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>功德增加一万</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<Modifier>Dan_ChaoRen5</Modifier>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>
+		</Element>
+	</ThingDef>
+	<!--体修丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen6" Parent="DanBase">
+		<ThingName>体修丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>获取所需坏心情, 体修能力百倍</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<Modifier>Dan_ChaoRen6</Modifier>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>
+		</Element>
+	</ThingDef>
 </List></ThingDefs>
