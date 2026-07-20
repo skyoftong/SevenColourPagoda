@@ -18,7 +18,7 @@
 		<ThingName>沃土改造</ThingName>
 		<Desc>将一块陆地区域改造成沃土，本工作需要消耗大量时间。</Desc>
 		<Building>
-			<FillTarrain>FertileSoil</FillTarrain>
+			<FillTarrain>LingSoil</FillTarrain>
 			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
 			<BeMade>
 				<WorkToMake>1</WorkToMake>
