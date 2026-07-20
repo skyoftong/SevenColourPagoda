@@ -1,13 +1,5 @@
 ﻿<!--丹炉丹方：需求等级、成功率、产量数量-->
 <DanFormulas><List>
-	<!--精元丹-回满-->
-	<Dan Name="Dan_JingYuan99">
-		<Normal>1</Normal>
-		<ItemName>Item_Dan_JingYuan99</ItemName>
-		<Level>0</Level>
-		<SuccessRate>1</SuccessRate>
-		<Count>1</Count>
-	</Dan>
 	<!--超人丹-->
 	<Dan Name="Dan_ChaoRen1">
 		<Normal>1</Normal>

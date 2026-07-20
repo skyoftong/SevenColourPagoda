@@ -1,38 +1,5 @@
 ﻿<!--物品定义:名称，图片，说明，等级、美观，消耗物品，-->
 <ThingDefs><List>
-	<!--精元丹-回满-->
-	<ThingDef Type="Item" Name="Item_Dan_JingYuan99" Parent="DanBase">
-		<ThingName>精元丹-回满</ThingName>
-		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
-		<Desc>回满精元。</Desc>	
-		<Rate>9</Rate>
-		<Beauty>16</Beauty>
-		<ElementKind>None</ElementKind>
-		<Item Lable="Dan">
-			<PhysicalLables>
-				<li>Smooth1</li>
-				<li>Hard1</li>
-				<li>Light1</li>
-			</PhysicalLables>
-			<Elixir>
-				<Modifier>Dan_JingYuan99</Modifier>
-			</Elixir>
-			<Food>
-				<EatDirectable>1</EatDirectable>
-				<PracticeNutrition>9999</PracticeNutrition>		
-			</Food>	
-			<BeMade>
-				<WorkToMake>400</WorkToMake>
-				<CostItems>
-					<Item name = "Item_LingStone" count = "10"/>
-				</CostItems>
-			</BeMade> 
-		</Item>
-		<Element>
-			<Kind>None</Kind>
-			<Value>3</Value>
-		</Element>
-	</ThingDef>
 	<!--超人丹-->
 	<ThingDef Type="Item" Name="Item_Dan_ChaoRen1" Parent="DanBase">
 		<ThingName>超人丹</ThingName>
@@ -79,7 +46,6 @@
 				<li>Hard1</li>
 				<li>Light1</li>
 			</PhysicalLables>
-
 			<Food>
 				<EatDirectable>1</EatDirectable>		
 			</Food>
