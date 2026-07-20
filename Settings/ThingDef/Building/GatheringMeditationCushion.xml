@@ -1,7 +1,7 @@
 <ThingDefs><List>
 	<ThingDef Type="Building" Name="Building_SuperMagicCushion" Parent="FurnitureBase">
 	<ThingName>法座plus</ThingName>
-	<Desc>修炼专用的法座，能聚集灵气。</Desc>
+	<Desc>修炼专用的法座，能聚集海量灵气。</Desc>
 	<Tags>
 		<Tag Name="Sitable" Level="1"/>
 		<Tag Name="Practice" Level="15"/>
@@ -51,7 +51,7 @@
 		</SnowRenderData>
 	</Building>
 	<Ling>
-		<AddionLing>10000000</AddionLing>
+		<AddionLing>100000000</AddionLing>
 		<AddionRadius>1</AddionRadius>
 		<AddionFailing>0.1</AddionFailing>
 		<AddionFailRadius>0</AddionFailRadius>
