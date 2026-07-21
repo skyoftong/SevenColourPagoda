@@ -222,6 +222,8 @@
 			<li Name="AgeCostSpeed" AddP="-100"/>
 			<li Name="GlobalEfficiency" AddP="100"/>
 			<li Name="MoveSpeed" AddP="100"/>
+			<li Name="ToleranceTMin" AddV="-273"/>
+			<li Name="ToleranceTMax" AddV="10000"/>
 		</Properties>
 	</Modifier>
 </List></ModifierDefs>
