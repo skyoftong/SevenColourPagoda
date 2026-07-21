@@ -82,7 +82,7 @@
 			<li Name="LingAbsorbSpeed" BAddV="100000000"/>
 			<li Name="NpcFight_FabaoNum" AddV="5"/>
 			<li Name="NpcFight_ShieldConversionRate" BAddV="10000"/>
-			<li Name="NpcFight_ShieldConversionRate" AddP="10000"/>
+			<li Name="NpcFight_ShieldConversionRate" Add="10000"/>
 			<li Name="NpcFight_FabaoPowerAddP" BAddV="10000"/>
 			<li Name="NpcFight_FabaoPowerAddP" AddP="10000"/>
 			<li Name="NpcFight_FabaoLingRecoverAddP" BAddV="10000"/>
@@ -92,6 +92,7 @@
 			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="10000"/>
 			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="10000"/> 
 			<li Name="NpcFight_FabaoTrailingLengthAddP" AddP="10000"/>
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddV="10000"/>
 			<li Name="NpcFight_SpellPowerAddP" AddV="10000"/>
 			<li Name="NpcFight_SpellLingCostAddP" AddP="-10000"/>
 			<li Name="NpcFight_SpellCoolDownAddP" AddP="-10"/> 
@@ -217,18 +218,16 @@
 		<Properties>
 			<li Name="NpcLingMaxValue" BAddV="1000000"/>
 			<li Name="LingAbsorbSpeed" BAddV="1000000"/>
-			<li Name="RecoveryPower" AddV="100"/>
-			<li Name="MagicDamageRecoveryPowerAddV" AddV="100"/>
 			<li Name="BodyPratice_QuenchingSpeed" AddV="10"/>
 			<li Name="BodyPractice_Other_TunaAddp" AddV="10"/>
 			<li Name="BodyPratice_RecoverZhenQi" AddV="10000"/>
+			<li Name="NpcFight_BaseHitChance" AddV="10"/>
+			<li Name="NpcFight_BaseDodgeChance" AddV="10"/>
 			<li Name="AgeCostSpeed" AddP="-100"/>
 			<li Name="GlobalEfficiency" AddP="100"/>
 			<li Name="MoveSpeed" AddP="100"/>
 			<li Name="ToleranceTMin" AddV="-273"/>
 			<li Name="ToleranceTMax" AddV="10000"/>
-			<li Name="RecoveryPower" AddV="10"/>
-			<li Name="MagicDamageRecoveryPowerAddV" AddV="10"/>
 			<li Name="PracticeFoodRecoveryConstant" AddP="10"/>
 			<li Name="PracticeFoodConsumeConstant" AddP="-10"/>
 			<li Name="NutritionToJingYuanK" AddP="1000"/>
