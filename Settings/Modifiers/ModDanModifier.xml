@@ -138,6 +138,7 @@
 		<Properties>
 			<li Name="BodyPratice_RecoverZhenQi" AddV="100000"/>
 			<li Name="RecoveryPower" AddP="400"/>
+			<li Name="PracticeFoodRecoveryConstant" AddP="10000"/>
 			<li Name="MagicDamageRecoveryPowerAddV" AddV="400"/>
 			<li Name="BodyPractice_SuperPartRecoverAddP" AddV="100"/>
 			<li Name="BodyPractice_Other_TunaAddp" AddV="1000"/>
@@ -228,8 +229,7 @@
 			<li Name="MoveSpeed" AddP="100"/>
 			<li Name="ToleranceTMin" AddV="-273"/>
 			<li Name="ToleranceTMax" AddV="10000"/>
-			<li Name="PracticeFoodRecoveryConstant" AddP="10"/>
-			<li Name="PracticeFoodConsumeConstant" AddP="-10"/>
+			<li Name="PracticeFoodRecoveryConstant" AddP="10000"/>
 			<li Name="NutritionToJingYuanK" AddP="10000"/>
 			<li Name="MindStateBaseValue" AddV="100"/>
 			<li Name="SpeedOfMindStateCoefficient" AddP="-1"/>
