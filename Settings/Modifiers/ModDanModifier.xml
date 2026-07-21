@@ -52,6 +52,7 @@
 			<li Name="NutritionToJingYuanK" AddP="100000"/>
 			<li Name="MindStateBaseValue" AddV="10000"/>
 			<li Name="SpeedOfMindStateCoefficient" AddP="-100"/>
+			<li Name="FatigueConsumeConstant" AddP="-10"/>
 		</Properties>
 	</Modifier>
 	<!--剑仙丹-->
