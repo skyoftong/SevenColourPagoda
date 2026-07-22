@@ -49,12 +49,19 @@
 			<li Name="ToleranceTMin" AddV="-273"/>
 			<li Name="ToleranceTMax" AddV="10000"/>
 			<li Name="PracticeFoodRecoveryConstant" AddP="100000"/>
-			<li Name="NutritionConsumeConstant" BAddV="0"/>
-			<li Name="WaterConsumeConstant" BAddV="0"/>
-			<li Name="FatigueConsumeConstant" AddP="-10"/>
+			<li Name="TreatmentExpectQuality" AddP="200"/>
 			<li Name="NutritionToJingYuanK" AddP="100000"/>
 			<li Name="MindStateBaseValue" AddV="10000"/>
 			<li Name="SpeedOfMindStateCoefficient" AddP="-100"/>
+			<li Name="MaxAge" AddV="100000000"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="10000"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="100"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="10"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="10"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="10"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="10"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="10"/>
+			<li Name="AgeCostSpeed" AddV="-100"/>
 		</Properties>
 	</Modifier>
 	<!--剑仙丹-->
@@ -221,3 +228,18 @@
 		</Properties>
 	</Modifier>
 </List></ModifierDefs>
+
+<!--真辟谷丹-->
+<Modifier Name="Dan_ChaoRen8" Type="Normal">
+	<DisplayName>真辟谷丹</DisplayName>
+	<Desc>饮食，喝水，精力不再消耗(精元需要消耗这三样回复)</Desc>
+	<MaxStack>0</MaxStack>
+	<Duration>-1</Duration>
+	<Display>0</Display>
+	<Properties>
+		<li Name="NutritionConsumeConstant" BAddV="-10"/>
+		<li Name="WaterConsumeConstant" BAddV="-10"/>
+		<li Name="FatigueConsumeConstant" AddP="-10"/>
+		<li Name="NutritionWaterAutoRecover" BAddV="10000"/>
+	</Properties>
+</Modifier>

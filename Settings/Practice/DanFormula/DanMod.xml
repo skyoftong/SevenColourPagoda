@@ -88,4 +88,20 @@
 		<SuccessRate>1</SuccessRate>
 		<Count>1</Count>
 	</Dan>
+	<!--真辟谷丹-->
+	<Dan Name="Dan_ChaoRen12">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen12</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--真精元丹-->
+	<Dan Name="Dan_ChaoRen13">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen13</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>10</Count>
+	</Dan>
 </List></DanFormulas>

@@ -352,4 +352,66 @@
 			<Value>100</Value>
 		</Element>
 	</ThingDef>
+	<!--真辟谷丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen12" Parent="DanBase">
+		<ThingName>真辟谷丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>饮食，喝水，精力不再消耗(精元需要消耗这三样回复)</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>		
+			</Food>
+			<Elixir>
+				<Modifier>Dan_ChaoRen8</Modifier>
+			</Elixir>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>
+		</Element>
+	</ThingDef>
+	<!--真精元丹-->
+	<ThingDef Type="Item" Name="Item_Dan_ChaoRen13" Parent="DanBase">
+		<ThingName>真精元丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>精元回复9999(辟谷之后需此法回复精元)</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>	
+				<PracticeNutrition>9999</PracticeNutrition>	
+			</Food>	
+			<BeMade>
+				<WorkToMake>40</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>
+		</Element>
+	</ThingDef>
 </List></ThingDefs>
